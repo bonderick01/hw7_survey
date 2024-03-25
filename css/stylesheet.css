@@ -54,3 +54,19 @@ button {
     float: right;
    
 }
+
+fieldset {
+    border: none;
+    
+}
+
+legend {
+    font-size: 20px;
+    color: black;
+}
+
+ul.classes {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
