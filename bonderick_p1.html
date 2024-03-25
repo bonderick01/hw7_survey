@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey | Page 1</title>
+    <title>Business Analytics Student Survey</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-    <h1>Survey | Page 1</h1>
-    <p>Page 1 of the survey</p>
+    <h1>Business Analytics Student Survey</h1>
     <main>
         <form>
             <label for="country">
                 What is your home country?
             <input type="text" id="country" required autofocus/>
+            <span class = "required">(required)</span>
             </label>
+
+            <br>
+
+            <p>&nbsp;</p>
+
+            <label for="town">
+              What is your home town?
+          <input type="text" id="town" required autofocus/>
+          </label>
+
+          <br>
+
+          <p>&nbsp;</p>
 
             <label for="state">
                 What state are you from?
                 <select name="state" id="state-select">
-                    <option value="" selected>-- choose state/territory --</option>
+                    <option value="" selected>-- Choose State/Territory --</option>
                     <option value="AL">AL</option>
                     <option value="AK">AK</option>
                     <option value="AZ">AZ</option>
@@ -80,43 +94,53 @@
                 </select>                
             </label>
 
-            <fieldset>
-                <legend> Choose your favorite activities </legend>
-                  <label for="running">
-                    <input type="checkbox" id="running" name="activities" value ="running"> Running
-                  </label>    
-              
-                  <label for="biking">
-                    <input type="checkbox" id="biking" name="activities" value="biking"> Biking
-                  </label>
-              
-                  <label for="reading">
-                    <input type="checkbox" id="reading" name="activities" value="reading"> Reading
-                  </label>
-              </fieldset> 
+            <br>
 
-              <fieldset>
-                <legend> How do you identify? </legend>
-              <label for="female">
-                <input type="radio" id="female" name="gender" value="female"> Female 
-            </label>
-        <br  
-            <label for="male">
-                <input type="radio" id="male" name="gender" value="male"> Male
-            </label>
-        <br>   
-            <label for="non-binary">
-            <input type="radio" id="non-binary" name="gender" value="non-binary">Non-binary
-            </label>  
-         </fieldset>
+            <p>&nbsp;</p>
 
+            <label for="impression">
+                What is your impression of the BAIS program?
+            </label>
+
+            <span class = "required">(required)</span>
+
+            <br>
+            <br>
+              
+            <ul class="scale">
+              <li>
+                <input type="radio" id="vn" name="sentiment" value="1" />
+                <label for="vn">Very Negative</label>
+              </li>
+              <li>
+                <input type="radio" id="sn" name="sentiment" value="2" />
+                <label for="sn">Somewhat Negative</label>
+              </li>
+              <li>
+                <input type="radio" id="n" name="sentiment" value="3" />
+                <label for="n">Neutral</label>
+              </li>
+              <li>
+                <input type="radio" id="sa" name="sentiment" value="4" />
+                <label for="sa">Somewhat Positive</label>
+              </li>
+              <li>
+                <input type="radio" id="va" name="sentiment" value="5" />
+                <label for="va">Very Positive</label>
+              </li>
+            </ul>
 
         </form>
     </main>
-    <p><button onclick="window.location.href='bonderick_p2.html';">
+
+    <p>&nbsp;</p>
+
+    <button onclick="window.location.href='bonderick_p2.html';">
         Next
       </button>
-    </p>
+
+      <div style="text-align: left;">Page 1 of 3</div>
+    
 </body>
 </html>
 
